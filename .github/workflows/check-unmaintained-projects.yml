@@ -1,3 +1,4 @@
+
 name: unmaintained projects
 
 on:
@@ -10,7 +11,7 @@ env:
 
 concurrency:
   group: unmaintained-projects-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   check-unmaintained-projects:
